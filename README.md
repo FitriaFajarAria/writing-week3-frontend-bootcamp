@@ -24,8 +24,26 @@ Pada Context, state dapat dikirim dari root component(App) langsung ke component
 
 ### Perbedaan Redux dan Context
 
-1. Context 
-
-- 
+Untuk state management dalam react, dalam arti secara keseluruhan, tidak ada hal yang benar benar berbeda antara Redux dengan Context. Satu hal yang mungkin berbeda adalah Context merupakan state management built in React, sedangkan Redux adalah third party library yang dapat digunakan dengan React. Akan tetapi, kedua hal tersebut (Context dan Redux) mempunyai tujuan yang sama, yaitu untuk mengatur state management. 
 
 # React-Testing
+
+Adalah seperangkat helpers yang memungkinkan Anda mengetes komponen pada React tanpa bergantung pada detail implementasinya. Ada banyak jenis testing yang terbagi dalam tiga kategori utama yaitu :
+
+1. unit testing
+2. integration testing
+3. UI testing
+
+Berikut adalah tampilan alur pengujian/testing :
+
+1. impor fungsi untuk menguji
+2. berikan masukan ke fungsi
+3. tentukan apa yang diharapkan sebagai output
+4. periksa apakah fungsi menghasilkan output yang diharapkan
+
+Jest adalah test runner pada JavaScript yang memungkinkan untuk mengakses DOM melalui jsdom. Untuk setiap pengujian, Umumnya kita me-render ke sebuah elemen DOM yang terhubung dengan document, agar pengujian dapat menerima event DOM. Setelah pengujian selesai, kita harus melakukan "pembersihan". Cara yang umum dilakukan adalah menggunakan pasangan blok beforeEach dan afterEach agar mereka terus berjalan dan memisahkan efek-efek dari sebuah pengujian hanya kepada pengujian tersebut. Install Jest:
+
+
+                npm i jest --save-dev
+                
+                
