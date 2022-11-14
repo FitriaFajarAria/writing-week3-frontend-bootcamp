@@ -45,5 +45,13 @@ Jest adalah test runner pada JavaScript yang memungkinkan untuk mengakses DOM me
 
 
                 npm i jest --save-dev
-                
+
+Untuk menjalankan tes, tambahkan ini ke package.json:
+
+
+                "scripts": {
+                 "test": "jest"
+                }                
+  
+
                 
